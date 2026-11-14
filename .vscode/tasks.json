@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Space Quest (Frontend)",
+      "type": "shell",
+      "command": "npm.cmd --prefix frontend run dev",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Run Mission Control API (Backend)",
+      "type": "shell",
+      "command": "npm.cmd --prefix backend run dev",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Run Simulation Tests",
+      "type": "shell",
+      "command": "npm.cmd --prefix backend exec -- tsx ../frontend/src/tests/simulation.test.ts",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    }
+  ]
+}

@@ -63,7 +63,10 @@ For detailed engineering models and mathematical equations, see:
 ```bash
 cd frontend
 npm install
+#To run the Frontend
 npm run dev
+(OR)
+npm.cmd --prefix frontend run dev
 ```
 The game will be available at: `http://localhost:5173`
 
